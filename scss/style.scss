@@ -1,0 +1,20 @@
+
+@use 'custom';
+
+// components
+@use 'components/animations' ;
+@use 'components/buttons';
+@use 'components/mixings';
+@use 'components/typography';
+
+// sections
+
+@use 'sections/navbar';
+@use 'sections/introsection';
+@use 'sections/companies';
+@use 'sections/testemonials';
+@use 'sections/services';
+@use 'sections/portfolio';
+@use 'sections/faq';
+@use 'sections/getstarted';
+@use 'sections/footer';

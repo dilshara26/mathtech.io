@@ -1,0 +1,37 @@
+.grid-container{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and(max-width:590px) {
+ .mail{
+   display: none;
+ }
+  
+}
+.connectus{
+    
+}
+.grid-connect-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .fab{
+        color: white;
+        padding-left: 23px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media only screen and(min-width: 769px) {
+  .grid-connect-item-1{  text-align: right;
+    padding-right: 20px;
+    
+    
+}
+}
+
+.Copyright{
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}

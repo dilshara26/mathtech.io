@@ -1,0 +1,48 @@
+@use '../custom' as * ;
+@use '../components/mixings.scss' as *;
+
+.theme{
+    @include gradient
+}
+
+.textstyle {
+    font-weight: 400;
+}
+.testimonial{
+    &__card{ background-color: rgba(255, 255, 255,0.8);
+        padding: 2rem 1.25rem;
+        border-radius: 0.623rem;
+        
+        
+        p{
+        color: black;
+        .iconcol{
+            color:$primary;
+        }
+        
+    }
+    }
+    &__img{ width: 6rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        img{
+            border: 0.325rem solid rgba($success, 0.7);
+        }
+        
+    }
+    &__name{
+        color: whitesmoke;
+        padding-top: 3rem;
+        
+
+        
+    }
+}
+.stars{
+    color:$primary;
+}
+
+.arrowcolor{
+    color: purple;
+}

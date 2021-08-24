@@ -1,0 +1,17 @@
+@use '../custom' as * ;
+@use '../components/mixings' as *;
+.menu{
+@include gradient;
+
+}
+
+.sethover{
+  font-weight: 500;
+}
+.sethover:hover {
+  color:  black;
+}
+
+li {
+  padding: 0 0.7rem;
+}

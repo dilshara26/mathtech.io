@@ -1,0 +1,29 @@
+@use '../components/mixings.scss' as *;
+@use '../custom' as * ;
+.GetStarted{
+    background-color: #F3F1F5;
+}
+.gs-background{
+    @include gradient;
+}
+.gs-background .display-4{
+    font-weight: 600;
+}
+
+.gs-para{
+    font-weight: 400;
+}
+.form-group{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+}
+.form-group label{
+    padding-left: 5px;
+}
+.terms{
+    
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+
+}

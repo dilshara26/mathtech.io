@@ -1,0 +1,106 @@
+@use '../custom' as * ;
+@use '../components/mixings' as *;
+@use '../components/animations' as *;
+
+.backgroundintro{
+@include gradient;
+}
+
+
+.videoimg{
+  width: 450px;
+
+//  the video button
+}
+
+.videobox{ position: relative;
+  a{
+    span{
+      i{
+        font-size: 6rem;
+        color: $success;
+      }
+
+    }
+  }
+}
+
+.border-animation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid white;
+  border-radius: 50%;
+  animation: pulseborder 1.5s linear infinite;
+  &--border1 {
+    animation-delay: 1s;
+  &--border2 {
+    animation-delay: 1.5s;
+  }
+  }
+
+}
+// //////////////// Delay animation/////////////////////
+
+@keyframes revealBox {
+  50%{
+      width: 100%;
+      left : 0;
+  }
+   100%{
+       width : 0;
+       left: 100%;
+   }
+}
+@keyframes revealText {
+  100%{
+      color: white;
+  }
+  
+}
+
+.mathanimi {
+  color: transparent;
+  width: fit-content;
+  display: block;
+  position: relative;
+  animation: revealText 1s ease forwards;
+  animation-delay: 1s; //time to appear text
+
+
+span{ 
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 0;
+  background-color: #343A40;
+  animation: revealBox 1s ease forwards;
+  animation-delay: .5s; // time to start animation
+  
+}
+}
+
+
+.paraanimi{
+  color: transparent;
+  width: fit-content;
+  display: block;
+  position: relative;
+  animation: revealText 1s ease forwards;
+  animation-delay: 1.8s;
+
+  span{ 
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+     background-color: #343A40;
+     animation: revealBox 1s ease forwards;
+     animation-delay: 1.3s;
+ }
+
+}

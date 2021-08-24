@@ -1,0 +1,31 @@
+@use '../custom' as * ;
+.school{
+  padding: 0 0 5rem 0;
+  &__logobox{
+  max-width: 100%;
+  padding: 0 50px;
+
+  .img{
+    height: 100%;
+    &:hover{
+      filter: grayscale(120);
+    }
+  }
+
+}
+}
+.nalanda{
+  padding: 0 5px;
+}
+.museaus{
+  padding: 0 30px;
+}
+.visaka{
+  padding: 0 30px;
+}
+.ananda{
+  padding: 5px 40px 0 ;
+}
+.isipathana{
+  padding: 5px 45px 0px ;
+}

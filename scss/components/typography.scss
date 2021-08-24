@@ -1,0 +1,91 @@
+@use '../custom' as * ;
+// headlines
+.headlines::before{
+  width: 10rem;
+  height: 0.2rem;
+  display: block;
+  background-color: $primary;
+  content: "";
+  margin: 0.5rem auto 0;
+
+
+}
+.headlines::after{
+  width: 2rem;
+  height: 0.2rem;
+
+  padding-top: 0.5rem;
+  display: block;
+  background-color: $primary;
+  margin: 0 auto;
+  content: "";
+
+
+}
+// intro styling
+.backgroundintro{
+.display-1 {
+  font-family: 'Audiowide', cursive;
+}
+.subHeading {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.intropara{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+}
+
+}
+//  services styling
+.servicestyle{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.servicepara{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+// horizontal line
+@media only screen and (min-width:600px){
+.border-right {
+  height: 100%;
+  border-right: 0.2rem solid $gray-300;
+  display: block;
+}
+}
+
+// heading animation
+.headinganimi{
+  background-image: linear-gradient(to right,$primary , $success);
+  animation-name: slide;
+animation-delay: 2s;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+}
+.servicesection{ animation-delay: 2s;
+
+    .display-69{
+      font-weight: 500px;
+      font-size: 2.5rem;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+}
+@keyframes slide {
+  from{
+    left: 0
+  }
+  to {
+    left: auto;
+  }
+}
+
+// single headline
+.sheadline {
+  width: 10rem;
+  height: 0.2rem;
+  display: block;
+  background-color: whitesmoke;
+  content: "";
+  margin: 0.5rem auto 0;
+}

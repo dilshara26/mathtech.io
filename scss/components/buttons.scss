@@ -1,0 +1,42 @@
+@use '../custom' as * ;
+
+// navbar button
+.btn-round {
+  width: 200px;
+  border-color: #0F52BA;
+  font-weight: 500;
+
+
+}
+.phone {
+  background-color: $primary;
+  margin-left: 1.25rem;
+  padding: 0.2rem 0.4rem;
+  width: 20px;
+  color: white;
+
+}
+.btn-round:hover{
+  opacity: 0.5;
+}
+
+// intro section button
+.arrow{
+  color: $primary;
+}
+.arrow:hover{ opacity: 0.5;
+
+}
+.introbtn:hover {
+  opacity: 0.75;
+}
+
+// learn more button
+
+.learnbtn {
+  border-color: $primary;
+  border-width: medium;
+}
+.colorfill{
+  color: $primary;
+}

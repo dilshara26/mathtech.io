@@ -1,0 +1,17 @@
+@use '../custom' as * ;
+
+// Gradients
+@mixin gradient {
+  background: linear-gradient(to right,rgba($secondary, 0.95) ,rgba($primary,0.95),rgba($success,0.95));
+}
+
+// play button
+@mixin playbtn {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+
